@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <p><ion-icon name="reorder-three-outline" (click)="menu()"></ion-icon> Joseph Gerard Diaz</p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item><h1>About Me</h1></ion-item>
+    <ion-card>
+      <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+          <ion-img class="center" src="assets/icon/aboutMe1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img class="center" src="assets/icon/aboutMe2.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+
+      <ion-card-content>
+        I was born in Lipa City, Batangas. The son of a Teacher and a Jeepney Driver. I lived my whole life here in the province. <br>
+        I went to St. Joseph School in my elementary. For my junior and senior highschool, I attended Canossa Academy. Both schools are located in my city. I am now currently a student of Batangas State University which is located at Batangas City. <br>
+        I think my college life is not complete since I was at my 1st year here when pandemic started. It took quite a while for me to be used in an online setup. But with the help of my family, friends, and professors, I keep on aspiring to learn with my aimed profession. I cannot learn much about IT without them. <br>
+      </ion-card-content>
+    </ion-card>
+
+    
+    <ion-item>Family Members: </ion-item>
+    <ion-item>
+    <app-family-info></app-family-info>
+    </ion-item>
+
+    <ion-button expand="block" shape="round" (click)="hobbies()">My Hobbies</ion-button>
+    
+</ion-content>

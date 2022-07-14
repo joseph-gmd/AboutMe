@@ -1,0 +1,14 @@
+<p> Father </p>
+<ul *ngFor = "let item of family">
+  <li *ngIf = "item.relevance === 0">{{item.fname}}</li>
+</ul>
+
+<p> Mother </p>
+<ul *ngFor = "let item of family">
+  <li *ngIf = "item.relevance === 1">{{item.fname}}</li>
+</ul>
+
+<p> Sister </p>
+<ul *ngFor = "let item of family">
+  <li *ngIf = "item.relevance === 2">{{item.fname}}</li>
+</ul>
